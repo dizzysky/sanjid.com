@@ -1,0 +1,62 @@
+html {
+	font-family: Helvetica Neue; 
+}
+
+h1.top {
+	 
+	font-size: 42px; 
+	font-family:Planet Kosmos ,Helvetica Neue, Helvetica; 
+	text-align: center;
+	color: blue; 
+	text-align; left; 
+
+
+}
+
+.shadow {
+	text-shadow: 2px 2px red; 
+}
+ {
+	color: red; 
+}
+.bottom{
+	position: absolute; 
+	margin-bottom: 50px; 
+	width: 50%; 
+	height: 20px; 
+	background-color: green; 
+
+	;
+}
+
+body {
+	background-color: white; 
+	background-image: none ;
+}
+
+h4:focus {
+	color: blue;
+	margin-left: 20px;
+
+}
+
+a:link {
+	color: blue;
+	text-decoration: none; 
+
+ } 
+a:visited {color: blue;}
+a:hover {color: grey;
+}
+
+p {
+	color: grey; 
+	font-size: 20px;  
+	padding: 40px; 
+	font-family: Helvetica Neue;
+	outline: blue dotted; 
+}
+
+#white {
+	color: white;
+}

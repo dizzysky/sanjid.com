@@ -1,0 +1,333 @@
+<html>
+
+<head>
+    
+	<title>Sanjid Dewan</title>
+    
+    <link rel="icon" href="img/mikado.png"/> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    
+	<style> 
+/*
+    
+        div {
+            border: 10px white dotted; 
+        }
+        
+*/
+        
+        body {
+/*    mikado        background: #ffc40c;*/
+            background: #d3d3d3;
+
+        }   
+        
+        
+        .blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color:transparent;    }
+/*    49%{    color: transparent; }*/
+    50%{    color:transparent; }
+/*    99%{    color:transparent;  }*/
+    100%{   color:black;    }
+}
+
+    
+        
+        
+        
+        a {
+            text-decoration: none;
+
+        }
+        
+        a.nav-link:visited {
+            text-decoration: none; 
+        }
+        
+
+        
+        /*NAVBAR*/
+        
+        #navbar {
+         margin-left: -30px;
+         position:fixed;    
+        }
+        
+       
+        
+        #navbar a {
+            color:black;
+        }
+        
+        #navlist li {
+            
+            
+            margin: 10px; 
+            color: white;
+        }
+        
+        #navlist a:hover {
+            text-decoration: line-through; 
+        }
+        
+        
+        
+        
+        
+        
+        
+   
+        
+        
+        
+        
+        
+   
+        
+
+        #contact {
+            margin: 0 auto;
+            
+        }
+        
+        
+        
+        
+        
+        #addresses {
+            display: none; 
+        }
+         
+        
+        #addresses a {
+            color: white;
+            font-family: "Helvetica"; 
+        }
+       
+        
+        
+        
+
+        
+        
+    
+        #portfolio {
+            margin: auto; 
+            display: none; 
+           
+        }
+        #portfolio ul {
+            list-style-type: none; 
+        }
+        
+        
+       
+    
+        
+        
+     
+        /*DESIGN*/
+        #design {
+            
+            display:none; 
+            width: 100%; 
+        }
+        
+        #design img {
+            width: 40%; 
+            height: auto; 
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            
+        #design li {
+            margin: 20px 0; 
+            list-style-type: none; 
+            }
+        
+
+        #soundcloud {
+            display: none;
+            resize: 
+            
+        }
+        
+
+    </style>
+    
+    
+    
+   
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    
+<script src="libraries/p5.js" type="text/javascript"></script>
+<script src="libraries/p5.dom.js" type="text/javascript"></script>
+<script src="libraries/p5.sound.js" type="text/javascript"></script>
+<script src="sketch.js" type="text/javascript"></script>
+    
+
+<script> 
+    
+$(document).ready(function(){
+    $("#contact").click('slow', function(){
+        $("#addresses").fadeIn();
+        /*$("#portfolio").hide();*/ 
+        $("#design").hide(); 
+        $("#soundcloud").hide(); 
+    });
+    
+    
+    
+    
+    $("#work").click('slow', function() {
+        $("#design").fadeIn(); 
+        $("#main").hide();
+        $("#addresses").hide(); 
+        $("#soundcloud").hide(); 
+        /*$("#portfolio").hide(); */
+       
+        
+        
+    });
+    
+    
+    
+    
+
+});
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    </script>
+
+   
+
+</head>
+    
+    
+    
+    
+
+<body>
+
+    <div id="navbar" style="float: left;">
+    
+
+    <!--NAVBAR--> 
+    
+    <ul text="white" id="navlist" style="margin-top:12px; list-style-type: none; font-family: 'Andale Mono', Helvetica; font-size: 10pt;">
+        <li style="margin-left: -5px;"><a href=https://sanjid.com><img style="width: 70px; height: auto;" src="img/tat.png"></a></li>
+        <li id="contact"> <a style="cursor: pointer;" id="show">contact</a></li>
+        <li id="work"> <a style="cursor:pointer;" >look</a></li> 
+        <li id="music"> <a href="https://www.soundcloud.com/sanjid-d/" target="_new">listen</a> </li>
+        <li> <a href="https://www.instagram.com/sanj.id/" target="_new"> instagram </a></li>
+        <li id="resume"><a href="pdf/resume.pdf">resume</a></li>
+    
+    
+    </ul>
+        
+    </div><!---end navbar---> 
+    
+    
+ 
+    <p class="blinking" style="position: fixed;top: 0px;right: 5px;">
+    
+    &#x26A0; Site Under Development
+    
+    </p>
+  
+ 
+    
+    
+	
+    <div id="addresses" style="float: left; margin-top: 200px; margin-left: 200px;" > 
+    
+        <h3> <a href="mailto:dsanjid@gmail.com"> dsanjid@gmail.com</a>      </h3>
+        <h3> <a href="mailto:sd2640@nyu.edu"> sd2640@nyu.edu</a>            </h3>
+        <h3> <a href="https://www.linkedin.com/in/sanjiddewan/">LinkedIn</a></h3>
+        
+    
+    
+    </div>
+
+
+<!--EGGPLANT-->
+
+    <div id="main" style="width:50%; height: 90%; margin-left: auto;margin-right: auto;margin-right: 100px;">
+        <img id="main" style="max-height: 100%;max-width: 100%;" src="img/eggplant.png"> 
+    </div>
+    
+    
+    
+
+    
+    <!--PORTFOLIO-->
+    <div id="design">
+    
+        <ul>
+            <li><img src="img/mag/spread1.png"></li>
+            <li><img src="img/mag/spread2.png"></li>
+            <li><img src="img/gowanus/gowanus_sign.png"></li>
+            <li><img src="img/gowanus/gowanus.png"></li>
+            <li><img src="img/kid.png"></li>
+            <li><img src="img/diver.png"></li>
+            <li><img src="img/baucircle.png"></li>
+            <li><img src="img/bookcovers/rush1.png"></li>
+            <li><img src="img/bookcovers/rush2.png"></li>
+            <li><img src="img/bookcovers/rush3.png"></li>
+            <li><img style="margin-top: 70px;" src="img/events/lotradioYELLOW.jpg"></li>
+            <li><img style="margin-top: 70px;" src="img/events/releaseparty.png"></li>
+            <li><img style="margin-top: 70px;" src="img/events/releaseparty2.png"></li>
+            <li><img style="margin-top: 70px;" src="img/events/mailroom.png"></li>
+        </ul>
+        
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="soundcloud" style="margin: auto; width: 40%;">
+    
+    <iframe  style="margin-top: 200px;" height="300px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/110822971&color=%232c3454&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        
+        
+        
+    </div>
+   
+    
+
+
+	
+
+</body>
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'a2plcpnl0573'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
+
