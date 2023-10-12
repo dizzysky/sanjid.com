@@ -1,6 +1,6 @@
 body {
     margin: 200px 0 0 300px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     -webkit-filter: blur(0.01px);
 
     text-shadow: 0px 0px 1px black;
