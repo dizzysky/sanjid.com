@@ -7,7 +7,7 @@ body {
 
 .headshot {
 
-    width: 200px; 
+    width: 300px; 
     height: auto;
     margin-bottom: 30px;
 }
@@ -19,16 +19,25 @@ a {
     margin: 3px 3px;
 }
 
+a:hover {
+    color: blue;
+}
+
 .links-header {
     margin-bottom: 5px;
 }
 
 div { 
     display: inline-block;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 15px;
-    box-shadow: 
-    -5px 0px 5px 0px rgba(0,0,0,0.2),   /* left shadow */
-    0px 5px 5px 0px rgba(0,0,0,0.2);    /* bottom shadow */
+    /* border-left: 1px solid black; */
+    /* border-bottom: 1px solid black; */
+    padding: 45px;
+    /* box-shadow: 
+    -5px 0px 5px 0px rgba(0,0,0,0.2),  
+    0px 5px 5px 0px rgba(0,0,0,0.2);    */
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+    /* box-shadow: -5px 5px 5px blue; */
+
+
+
 }
