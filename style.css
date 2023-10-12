@@ -2,7 +2,7 @@ body {
     margin: 200px 0 0 300px;
     font-family: 'Montserrat';
     -webkit-filter: blur(0.01px);
-    filter: blue(1px);
+    filter: blur(1px);
 }
 
 .headshot {
