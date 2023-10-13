@@ -1,13 +1,19 @@
 body {
     margin: 10% 0 0 10%;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     -webkit-filter: blur(1px);
     filter: blur(1px);
 }
 
-.headshot {
+.main-content {
+    position: relative;
+    display: inline-block;
+    padding: 45px;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+}
 
-    width: 300px; 
+.headshot {
+    width: 300px;
     height: auto;
     margin-bottom: 30px;
 }
@@ -16,7 +22,9 @@ a {
     text-decoration: none;
     color: black;
     display: block;
+    display: inline-block;
     margin: 3px 3px;
+    font-size: 18px;
 }
 
 a:hover {
@@ -27,17 +35,24 @@ a:hover {
     margin-bottom: 5px;
 }
 
-div { 
-    display: inline-block;
-    /* border-left: 1px solid black; */
-    /* border-bottom: 1px solid black; */
-    padding: 45px;
-    /* box-shadow: 
-    -5px 0px 5px 0px rgba(0,0,0,0.2),  
-    0px 5px 5px 0px rgba(0,0,0,0.2);    */
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
-    /* box-shadow: -5px 5px 5px blue; */
+.screenshot-display {
+    position: absolute;
+    width: 75vh;
+    height: auto;
+    margin-top: 20px;
+    display: none;
+    top: 200px;
+    left: 750px;
+    z-index: 1000;
+}
 
+.screenshot-display img {
+    max-width: 100%;
+    height: auto;
+}
 
-
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
