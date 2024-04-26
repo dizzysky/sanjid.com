@@ -1,6 +1,7 @@
 body {
     margin: 10% 0 0 10%;
-    font-family: "Graphik", monospace;
+    font-family: "Montserrat";
+    font-size: 1.4em;
     -webkit-filter: blur(1px);
     filter: blur(1px);
 }
