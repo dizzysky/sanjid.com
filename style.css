@@ -1,7 +1,7 @@
 body {
     margin: 10% 0 0 10%;
     font-family: "Montserrat";
-    font-size: 1.4em;
+    font-size: 15px;
     -webkit-filter: blur(1px);
     filter: blur(1px);
 }
@@ -31,7 +31,6 @@ a {
 a:hover {
     color: blue;
 }
-
 .links-header {
     margin-bottom: 5px;
 }
