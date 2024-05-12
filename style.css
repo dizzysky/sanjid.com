@@ -22,7 +22,6 @@ body {
 a {
     text-decoration: none;
     color: black;
-    /* display: block; */
     display: inline;
     margin: 3px 3px;
     font-size: 18px;
