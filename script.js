@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener("mouseenter", function () {
             const screenshotSrc = this.getAttribute("data-screenshot");
             projectScreenshot.src = screenshotSrc;
-            screenshotDisplay.style.display = "block"; // Show the screenshot displayyyy
+            screenshotDisplay.style.display = "block"; // Show the screenshot display
         });
 
         link.addEventListener("mouseleave", function () {
