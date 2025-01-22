@@ -7,21 +7,6 @@ function openInNewBackgroundTab(link) {
     link.dispatchEvent(evt);
     return false;
 }
-
-let visitorCount = localStorage.getItem("visitorCount");
-
-if (visitorCount == null) {
-    visitorCount = 1;
-} else {
-    visitorCount = parseInt(visitorCount) + 1;
-}
-
-localStorage.setItem("visitorCount", visitorCount);
-
-document.getElementById(
-    "visitor-number"
-).textContent = `Congrats! You're visitor #${visitorCount}`;
-
 document.addEventListener("DOMContentLoaded", function () {
     const projectLinks = document.querySelectorAll("[data-screenshot]");
     const projectScreenshot = document.getElementById("project-screenshot");
