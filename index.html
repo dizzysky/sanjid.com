@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <!-- Google tag (gtag.js) -->
+        <!-- image sourcing locally vs GitHub -->
+        <script>
+            const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+            const basePath = isLocal ? "" : "/sanjid.com";
+            document.querySelectorAll("[data-screenshot]").forEach((link) => {
+                const screenshotSrc = link.getAttribute("data-screenshot");
+                link.setAttribute("data-screenshot", `${basePath}${screenshotSrc}`);
+            });
+        </script>
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G18ZD3GQX6"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-G18ZD3GQX6');
+    gtag('config', 'G-G18ZD3GQX6');
 </script>
         <script>
             window.dataLayer = window.dataLayer || [];
