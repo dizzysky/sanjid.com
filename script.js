@@ -24,3 +24,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const heading = document.querySelector(".main-content h1");
+    const names = ["Sanjid Dewan", "dizzysky"];
+
+    function switchName() {
+        const randomName = names[Math.floor(Math.random() * names.length)];
+        heading.textContent = randomName;
+    }
+
+    function changeNameAtRandomIntervals() {
+        setInterval(switchName, Math.random() * 3000 + 2000);
+    }
+
+    changeNameAtRandomIntervals();
+});
