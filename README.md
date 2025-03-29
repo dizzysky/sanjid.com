@@ -7,4 +7,3 @@ fwef
 sfd
 wwef
 jfowiej
-w
