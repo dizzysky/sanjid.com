@@ -3,22 +3,32 @@
     <head>
         <!-- image sourcing locally vs GitHub -->
         <script>
-            const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+            const isLocal =
+                window.location.hostname === "localhost" ||
+                window.location.hostname === "127.0.0.1";
             const basePath = isLocal ? "" : "/sanjid.com";
             document.querySelectorAll("[data-screenshot]").forEach((link) => {
                 const screenshotSrc = link.getAttribute("data-screenshot");
-                link.setAttribute("data-screenshot", `${basePath}${screenshotSrc}`);
+                link.setAttribute(
+                    "data-screenshot",
+                    `${basePath}${screenshotSrc}`
+                );
             });
         </script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G18ZD3GQX6"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-G18ZD3GQX6"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-    gtag('config', 'G-G18ZD3GQX6');
-</script>
+            gtag("config", "G-G18ZD3GQX6");
+        </script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag() {
@@ -37,7 +47,7 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
             rel="stylesheet"
         />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     </head>
     <body>
         <div class="screenshot-display">
@@ -45,7 +55,16 @@
         </div>
         <div class="main-content">
             <img class="headshot" src="./assets/images/corner.jpeg" />
-            <h1>Sanjid Dewan</h2>
+            <h1>Sanjid Dewan</h1>
+
+            <p class="coaching-description">
+                An intuitive approach to quality billiards play.
+            </p>
+
+            <p class="coaching-rate">$60/hr</p>
+            <a class="coaching-email" href="mailto:dsanjid@gmail.com">
+                contact ↗
+            </a>
             <!-- <h2 class="links-header">Projects</h2>
             <div class="links-container">
                 <a
