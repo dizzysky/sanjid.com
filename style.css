@@ -5,21 +5,6 @@
     font-style: normal;
 }
 
-@media only screen and (max-width: 768px) {
-    .main-content,
-    .screenshot-display {
-        display: none;
-    }
-
-    .mobile-gif {
-        display: block;
-    }
-}
-
-.mobile-gif {
-    display: none;
-}
-
 body {
     margin: 10% 0 0 10%;
     font-family: "Montserrat";
@@ -106,4 +91,47 @@ a:hover {
 
 .coaching-email:hover {
     color: blue;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 32px 20px;
+    }
+
+    .main-content {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+        padding: 24px;
+        margin: 0 auto;
+        box-shadow: -8px 0 12px -8px rgba(0, 0, 0, 0.15);
+    }
+
+    .headshot {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 24px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .coaching-description {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .coaching-rate,
+    .coaching-email {
+        font-size: 13px;
+    }
+
+    .screenshot-display {
+        display: none;
+    }
 }
